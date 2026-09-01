@@ -10,28 +10,46 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, onOpenDetails }: ProductCardProps) {
   return (
-    <div className="bg-white rounded-3xl border border-slate-100 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-      {/* Product Image */}
-      <div className="relative w-44 h-44 mb-4 transform group-hover:scale-105 transition-transform duration-300">
+    <div className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" dir="rtl">
+      
+      {/* Product Image Container (Full Width Top) */}
+      <div className="relative w-full h-64 bg-slate-50 overflow-hidden">
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
+        {/* Weight Badge */}
+        <span className="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-slate-700 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+          {product.weight}
+        </span>
       </div>
 
-      {/* Product Details */}
-      <h3 className="text-lg font-bold text-slate-800 mb-1">{product.name}</h3>
-      <p className="text-sm font-black text-[#1b7e41] mb-4">EGP {product.price}</p>
+      {/* Product Details & Button */}
+      <div className="p-6 flex flex-col flex-grow justify-between text-right">
+        <div>
+          <h3 className="text-lg font-black text-slate-800 mb-1 group-hover:text-[#1b7e41] transition-colors">
+            {product.name}
+          </h3>
+          <div className="flex items-center justify-between mt-3">
+            <span className="text-xl font-black text-[#1b7e41]">
+              {product.price} <span className="text-xs font-medium text-slate-500">EGP</span>
+            </span>
+          </div>
+        </div>
 
-      {/* Button */}
-      <button
-        onClick={() => onOpenDetails(product)}
-        className="w-full py-2.5 px-4 rounded-xl border border-[#1b7e41] text-[#1b7e41] font-semibold text-sm hover:bg-[#1b7e41] hover:text-white transition-colors duration-200"
-      >
-        عرض التفاصيل
-      </button>
+        {/* Action Button */}
+        <div className="mt-6">
+          <button
+            onClick={() => onOpenDetails(product)}
+            className="w-full text-center hover:bg-[#1b7e41] text-[#1b7e41] hover:text-white font-bold text-sm py-3 rounded-2xl transition-all duration-300 shadow-sm border border-[#1b7e41]"
+          >
+            عرض التفاصيل
+          </button>
+        </div>
+      </div>
+
     </div>
   );
 }
