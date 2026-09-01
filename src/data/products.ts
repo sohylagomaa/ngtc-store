@@ -1,0 +1,133 @@
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  weight: string;
+  category: string;
+  image: string;
+  description: string;
+  chefRecommendations: string[];
+}
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "خس باتافيا",
+    price: 130,
+    weight: "قطعة واحدة",
+    category: "ورقيات طازجة",
+    image: "/images/products/batavia.jpeg",
+    description: "خس عضوي طازج ومقرمش، يُزرع بنظام مائي متطور خالٍ تماماً من المبيدات لضمان النقاوة والطعم الطازج.",
+    chefRecommendations: ["السلطات الخضراء", "الساندويتشات الفاخرة"],
+  },
+  {
+    id: "2",
+    name: "خس أوكليف",
+    price: 140,
+    weight: "قطعة واحدة",
+    category: "ورقيات طازجة",
+    image: "/images/products/oakleafLettuce.jpeg",
+    description: "خس أوكليف ذو أوراق متعرجة ومذاق غني، يُزرع هيدروبونيكس بعناية فائقة.",
+    chefRecommendations: ["سلطات الجورميه", "أطباق التزيين"],
+  },
+  {
+    id: "3",
+    name: "ريحان إيطالي فاخر",
+    price: 160,
+    weight: "50 جرام",
+    category: "أعشاب فاخرة",
+    image: "/images/products/basil.jpeg",
+    description: "ريحان إيطالي فاخر بنكهة عطرية مركزة ومقطوف طازجاً للحفاظ على زيوته الطيارة الطبيعية.",
+    chefRecommendations: ["صلصة البيستو", "سلطة كابريزي"],
+  },
+  {
+    id: "4",
+    name: "جرجير إيطالي",
+    price: 140,
+    weight: "100 جرام",
+    category: "ورقيات طازجة",
+    image: "/images/products/arugula.jpeg",
+    description: "أوراق جرجير إيطالي طازجة ذات طعم قوي ومميز غنية بالمغذيات والفيتامينات.",
+    chefRecommendations: ["سلطة الجرجير بالرمان", "المأكولات البحرية البيتزا"],
+  },
+  {
+    id: "5",
+    name: "كزبرة طازجة",
+    price: 50,
+    weight: "100 جرام",
+    category: "أعشاب فاخرة",
+    image: "/images/products/coriander.jpeg",
+    description: "كزبرة عضوية طازجة وعطرية تضفي نكهة مميزة على الأطباق الشرقية والعالمية.",
+    chefRecommendations: ["الأطباق الشرقية", "الصلصات الطازجة"],
+  },
+  {
+    id: "6",
+    name: "بقدونس طازج",
+    price: 50,
+    weight: "100 جرام",
+    category: "ورقيات طازجة",
+    image: "/images/products/parsley.jpeg",
+    description: "بقدونس عضوي عالي النقاوة، مقطوف بعناية لتعزيز الأطباق الراقية.",
+    chefRecommendations: ["سلطة التبولة", "الشوربات الفاخرة"],
+  },
+  {
+    id: "7",
+    name: "كيل (Kale)",
+    price: 180,
+    weight: "قطعة / حزمة",
+    category: "ورقيات طازجة",
+    image: "/images/products/kale.jpeg",
+    description: "أوراق الكيل الخضراء الغنية بمضادات الأكسدة والعناصر الغذائية الخارقة.",
+    chefRecommendations: ["سلطات الكيل الصحية", "عصائر الديوتوكس"],
+  },
+  {
+    id: "8",
+    name: "سبانخ طازجة",
+    price: 100,
+    weight: "قطعة / حزمة",
+    category: "ورقيات طازجة",
+    image: "/images/products/spinach.jpeg",
+    description: "سبانخ هيدروبونيك طرية ونظيفة خالية من الشوائب ومثالية لكافة الأطباق.",
+    chefRecommendations: ["الشوربات", "المعجنات والسلطات"],
+  },
+  {
+    id: "9",
+    name: "ميكرو جرينز (Micro Greens)",
+    price: 60,
+    weight: "عبوة 50 جرام",
+    category: "ورقيات طازجة",
+    image: "/images/products/microGreens.jpeg",
+    description: "براعم النباتات الفتية المركزة بالفيتامينات والنكهات القوية لتزيين الأطباق.",
+    chefRecommendations: ["تزيين الأطباق الراقية", "السلطات السريعة"],
+  },
+  {
+    id: "10",
+    name: "زهور قابلة للأكل (Edible Flowers)",
+    price: 10,
+    weight: "10 جرام",
+    category: "أعشاب فاخرة",
+    image: "/images/products/edibleFlowers.jpeg",
+    description: "زهور ملونة صالحة للأكل تضفي مظهراً جمالياً ولمسة ساحرة على أطباقك.",
+    chefRecommendations: ["تزيين الحلويات", "السلطات الفاخرة"],
+  },
+  {
+    id: "11",
+    name: "سوريال (Sorrel)",
+    price: 800,
+    weight: "حزمة",
+    category: "أعشاب فاخرة",
+    image: "/images/products/sorrel.jpeg",
+    description: "أوراق السوريال ذات المذاق الحامض المنعش والمميز لتحضير أرقى وصفات الطهي.",
+    chefRecommendations: ["شوربة السوريال", "صلصات الأسماك"],
+  },
+  {
+    id: "12",
+    name: "مكس ورقيات (Mix Greens)",
+    price: 230,
+    weight: "1 كيلو",
+    category: "ورقيات طازجة",
+    image: "/images/products/microGreens.jpeg",
+    description: "تشكيلة مختارة ومثالية من أجود أنواع الورقيات والخضروات المزروعة يومياً.",
+    chefRecommendations: ["السلطات اليومية العائلية", "مطاعم الجورميه"],
+  },
+];
