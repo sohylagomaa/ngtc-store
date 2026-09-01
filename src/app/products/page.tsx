@@ -24,7 +24,7 @@ export default function ProductsPage() {
         <div className="inline-flex items-center justify-center p-3 bg-emerald-100 rounded-full mb-4">
           <span className="text-xl">🌿</span>
         </div>
-        <h1 className="text-3xl md:text-4xl font-black text-slate-800 mb-3">
+        <h1 className="text-3xl md:text-4xl font-black text-[#1b7e41] mb-3">
           جميع المنتجات الأورجانيك الفاخرة
         </h1>
         <p className="text-slate-500 text-sm md:text-base max-w-xl mx-auto">

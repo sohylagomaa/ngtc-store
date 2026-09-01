@@ -11,11 +11,23 @@ import { Play, ShieldCheck, Sprout } from "lucide-react";
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const featuredProducts = products.slice(0, 3);
+  const featuredProducts = products.slice(0, 6);
 
   return (
+    
     <main dir="rtl" className="min-h-screen bg-[#fafaf9]">
       <HeroSlider />
+      {/* Background Watermark Logo */}
+<div className="fixed inset-0 pointer-events-none flex items-center justify-center z-0 overflow-hidden opacity-[0.04]">
+  <div className="relative w-[900px] h-[900px]">
+    <Image
+      src="/images/logo.png"
+      alt="Watermark"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
 
       {/* Products Section */}
       <section id="products" className="max-w-6xl mx-auto py-20 px-6 text-center">
@@ -38,7 +50,7 @@ export default function Home() {
 
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 bg-[#1b7e41] hover:bg-[#146031] text-white text-xs font-bold px-7 py-3 rounded-full transition-colors"
+          className="inline-flex items-center gap-2 bg-[#1b7e41] hover:bg-[#146031] text-white text-sm font-bold px-7 py-4 rounded-full transition-colors"
         >
           <span>عرض جميع المنتجات</span>
           <span>←</span>

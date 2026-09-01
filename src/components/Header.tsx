@@ -54,7 +54,7 @@ export default function Header() {
         {/* Action Button & Burger Menu Toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="https://wa.me/01142264140"
+            href="https://wa.me/201142264140"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex bg-[#1b7e41] hover:bg-[#146031] text-white text-sm md:text-base font-bold px-6 py-2.5 rounded-full items-center gap-2 transition-all shadow-sm"
