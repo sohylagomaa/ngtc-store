@@ -19,6 +19,7 @@ export default function ProductsPage() {
 
   return (
     <main className="min-h-screen bg-[#fafaf9] py-12 px-6 md:px-12 dir-rtl">
+      
       {/* Page Header */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <div className="inline-flex items-center justify-center p-3 bg-emerald-100 rounded-full mb-4">
