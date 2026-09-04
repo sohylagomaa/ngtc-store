@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, Menu, X } from "lucide-react";
 
+const phoneNumber = "201142264140";
+const message = encodeURIComponent("مرحباً، أود الاستفسار عن منتجات NGTC الأورجانيك.");
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -46,15 +48,12 @@ export default function Header() {
           <Link href="#reviews" className="hover:text-[#1b7e41] transition-colors">
             آراء العملاء
           </Link>
-          <Link href="#contact" className="hover:text-[#1b7e41] transition-colors">
-            تواصل معنا
-          </Link>
         </nav>
 
         {/* Action Button & Burger Menu Toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="https://wa.me/201142264140"
+            href={`https://wa.me/${phoneNumber}?text=${message}`}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex bg-[#1b7e41] hover:bg-[#146031] text-white text-sm md:text-base font-bold px-6 py-2.5 rounded-full items-center gap-2 transition-all shadow-sm"
@@ -115,7 +114,7 @@ export default function Header() {
           </Link>
 
           <a
-            href="https://wa.me/201000000000"
+            href="https://wa.me/201142264140"
             target="_blank"
             rel="noopener noreferrer"
             className="sm:hidden mt-2 bg-[#1b7e41] text-white text-base font-bold py-3 rounded-full flex items-center justify-center gap-2 text-center"
