@@ -91,7 +91,7 @@ export default function Header() {
           </Link>
           
           <Link
-            href="#reviews"
+            href="/reviews"
             onClick={() => setIsMenuOpen(false)}
             className="hover:text-[#1b7e41] py-1 border-b border-slate-100 transition-colors"
           >
