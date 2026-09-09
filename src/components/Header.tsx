@@ -89,13 +89,7 @@ export default function Header() {
           >
             منتجاتنا
           </Link>
-          <Link
-            href="#about"
-            onClick={() => setIsMenuOpen(false)}
-            className="hover:text-[#1b7e41] py-1 border-b border-slate-100 transition-colors"
-          >
-            عن الشركة
-          </Link>
+          
           <Link
             href="#reviews"
             onClick={() => setIsMenuOpen(false)}
@@ -103,13 +97,7 @@ export default function Header() {
           >
             آراء العملاء
           </Link>
-          <Link
-            href="#contact"
-            onClick={() => setIsMenuOpen(false)}
-            className="hover:text-[#1b7e41] py-1 transition-colors"
-          >
-            تواصل معنا
-          </Link>
+          
 
           <a
             href="https://wa.me/201031616836"
