@@ -9,6 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Play, ShieldCheck, Sprout } from "lucide-react";
 import HomeReviewsSection from "../components/ui/HomeReviewSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -58,28 +59,27 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Video Banner Section */}
-      <section className="max-w-6xl mx-auto px-6 mb-20">
-        <div className="relative w-full h-[320px] md:h-[380px] rounded-[32px] overflow-hidden shadow-xl flex items-center justify-end p-8 md:p-12 text-white">
-          {/* Real Video Element */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover brightness-[0.44]"
-          >
-            <source src="/images/ngtc-video.mp4" type="video/mp4" />
-            متصفحك لا يدعم عرض الفيديو.
-          </video>
-        </div>
-      </section>
-      
+    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 mb-16 md:mb-20">
+  <div className="relative w-full h-[160px] sm:h-[240px] md:h-[350px] lg:h-[450px] rounded-[20px] md:rounded-[32px] overflow-hidden shadow-2xl">
+    {/* Real Video Element */}
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/images/ngtc.mp4" type="video/mp4" />
+      متصفحك لا يدعم عرض الفيديو.
+    </video>
+  </div>
+</section>
+
       {/* Reviews Section Component */}
       <section id="reviews">
         <HomeReviewsSection />
-        </section>
-
+      </section>
+      <Footer />
       {/* Product Popup Modal */}
       <ProductModal
         product={selectedProduct}

@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsappButton() {
-  const phoneNumber = "201142264140"; 
+  const phoneNumber = "201031616836"; 
   const message = encodeURIComponent("مرحباً، أود الاستفسار عن منتجات NGTC الأورجانيك.");
 
   return (

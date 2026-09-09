@@ -20,7 +20,6 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
       <div dir="rtl" className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
         
-        {/* Close Button - تم تعديل مكانة ولونه ليكون واضحاً وبارزاً فوق أي خلفية */}
         <button
           onClick={onClose}
           className="absolute top-4 left-4 z-30 p-2.5 bg-white/90 hover:bg-white text-slate-700 hover:text-red-500 rounded-full shadow-lg transition-all duration-200 backdrop-blur-md"
@@ -29,7 +28,6 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <X className="w-5 h-5 font-bold" />
         </button>
 
-        {/* Image Side (تغطي نصف الـ Modal بالكامل بدون فراغات وبشكل Premium) */}
         <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[450px] bg-emerald-50/50 flex items-center justify-center overflow-hidden">
           <Image
             src={product.image}
@@ -39,7 +37,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           />
         </div>
 
-        {/* Content Side (النص والتفاصيل) */}
+        {/* Content Side  */}
         <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-between bg-white">
           <div>
             <span className="inline-block px-3.5 py-1 bg-emerald-100 text-[#1b7e41] text-xs font-bold rounded-full mb-3">
@@ -69,7 +67,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           </div>
 
           <a
-            href={`https://wa.me/201142264140?text=${whatsappMessage}`}
+            href={`https://wa.me/201031616836?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full py-4 bg-[#1b7e41] hover:bg-[#146031] text-white font-bold rounded-2xl flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:shadow-xl"

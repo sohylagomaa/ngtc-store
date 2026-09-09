@@ -98,7 +98,7 @@ export default function HomeReviewsSection() {
             ))}
           </div>
         ) : (
-          // ** الحالة الثانية: لو لسا مفيش أي تقييمات (رسالة بديلة شيك) **
+          // ** الحالة الثانية: لو لسا مفيش أي تقييمات (رسالة بديلة ) **
           <div className="bg-white rounded-3xl p-10 border border-slate-100 shadow-md text-center max-w-xl mx-auto">
             <div className="w-14 h-14 bg-emerald-50 text-[#1b7e41] rounded-2xl flex items-center justify-center mx-auto mb-4">
               <MessageSquarePlus className="w-7 h-7" />

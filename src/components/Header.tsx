@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, Menu, X } from "lucide-react";
 
-const phoneNumber = "201142264140";
+const phoneNumber = "201031616836";
 const message = encodeURIComponent("مرحباً، أود الاستفسار عن منتجات NGTC الأورجانيك.");
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,13 +39,11 @@ export default function Header() {
           <Link href="/" className="text-[#1b7e41] border-b-2 border-[#1b7e41] pb-1">
             الرئيسية
           </Link>
-          <Link href="#products" className="hover:text-[#1b7e41] transition-colors">
+          <Link href="products" className="hover:text-[#1b7e41] transition-colors">
             منتجاتنا
           </Link>
-          <Link href="#about" className="hover:text-[#1b7e41] transition-colors">
-            عن الشركة
-          </Link>
-          <Link href="#reviews" className="hover:text-[#1b7e41] transition-colors">
+          
+          <Link href="reviews" className="hover:text-[#1b7e41] transition-colors">
             آراء العملاء
           </Link>
         </nav>
@@ -114,7 +112,7 @@ export default function Header() {
           </Link>
 
           <a
-            href="https://wa.me/201142264140"
+            href="https://wa.me/201031616836"
             target="_blank"
             rel="noopener noreferrer"
             className="sm:hidden mt-2 bg-[#1b7e41] text-white text-base font-bold py-3 rounded-full flex items-center justify-center gap-2 text-center"
