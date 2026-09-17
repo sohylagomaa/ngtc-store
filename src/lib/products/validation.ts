@@ -1,10 +1,6 @@
 import { z } from "zod";
 
 export const productSchema = z.object({
-  id: z
-    .string()
-    .min(1, "رقم المنتج مطلوب"),
-
   name: z
     .string()
     .min(2, "اسم المنتج يجب أن يحتوي على حرفين على الأقل"),
@@ -38,6 +34,4 @@ export const productSchema = z.object({
     .min(1, "يرجى إضافة توصية واحدة على الأقل"),
 });
 
-export const updateProductSchema = productSchema
-  .omit({ id: true })
-  .partial();
+export const updateProductSchema = productSchema.partial();
