@@ -4,21 +4,19 @@ import bcrypt from "bcryptjs";
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
-const username = process.env.ADMIN_USERNAME;
-const password = process.env.ADMIN_PASSWORD;
-const secret = process.env.AUTH_SECRET;
+function getRequiredEnv(name: string): string {
+  const value = process.env[name];
 
-if (!username) {
-  throw new Error("Missing ADMIN_USERNAME environment variable");
+  if (!value) {
+    throw new Error(`Missing ${name} environment variable`);
+  }
+
+  return value;
 }
 
-if (!password) {
-  throw new Error("Missing ADMIN_PASSWORD environment variable");
-}
-
-if (!secret) {
-  throw new Error("Missing AUTH_SECRET environment variable");
-}
+const username = getRequiredEnv("ADMIN_USERNAME");
+const password = getRequiredEnv("ADMIN_PASSWORD");
+const secret = getRequiredEnv("AUTH_SECRET");
 
 const secretKey = new TextEncoder().encode(secret);
 

@@ -7,8 +7,8 @@ import ProductCard from "@/src/components/ui/ProductCard";
 import ProductModal from "@/src/components/ui/ProductModal";
 import Link from "next/link";
 import Image from "next/image";
-import HomeReviewsSection from "../components/ui/HomeReviewSection";
-import Footer from "../components/Footer";
+import HomeReviewsSection from "../../components/ui/HomeReviewSection";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
