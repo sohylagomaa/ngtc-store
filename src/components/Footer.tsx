@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex items-center gap-3">
             <Image src="/images/logo.png" alt="NGTC Logo" width={24} height={24} className="w-12 h-12 object-contain" />
           
-          <span className="text-lg font-bold tracking-wide text-green-900">NGTC</span>
+          <span className="text-lg font-bold tracking-wide text-[#979799]">NGTC</span>
         </div>
 
         <div>

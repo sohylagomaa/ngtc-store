@@ -12,7 +12,7 @@ export default function StorefrontLayout({
       {/* Background Watermark */}
       <div className="fixed inset-0 pointer-events-none z-0 flex items-center justify-center opacity-[0.015] select-none">
         <div className="relative w-[600px] h-[600px]">
-          <Image src="/images/logo.jpeg" alt="Watermark" fill className="object-contain" priority />
+          <Image src="/images/logo.png" alt="Watermark" fill className="object-contain" priority />
         </div>
       </div>
 
