@@ -29,7 +29,7 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="text-2xl md:text-3xl font-black text-[#1b7e41] tracking-wider">
+          <span className="text-2xl md:text-3xl font-black text-[#979799] tracking-wider">
             NGTC
           </span>
         </Link>
